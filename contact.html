@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ark Café | Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Ark Café</div>
+      <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+      <ul class="nav-links collapsible">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="intro-section">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Please reach out with any questions, feedback, or to book a table.</p>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-info">
+      <h2>Our Location & Hours</h2>
+      <p><strong>Address:</strong> Kiosk 1/1183-1187 The Horsley Dr, Wetherill Park NSW 2164</p>
+      <p><strong>Phone:</strong> (02) 1234 5678</p>
+      <h3>Opening Hours</h3>
+      <ul>
+        <li>Wednesday: 6 am – 5 pm</li>
+        <li>Thursday: 6 am – 5 pm</li>
+        <li>Friday: 6 am – 5 pm</li>
+        <li>Saturday: 7 am – 5 pm</li>
+        <li>Sunday: 8 am – 4 pm</li>
+        <li>Monday: 6 am – 5 pm</li>
+        <li>Tuesday: 6 am – 5 pm</li>
+      </ul>
+    </div>
+
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13264.622928679672!2d150.84490779999997!3d-33.81817515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129a4eecdb1c8f%3A0x709324de12e45a6f!2sThe%20Horsley%20Dr%2C%20Wetherill%20Park%20NSW%202164%2C%20Australia!5e0!3m2!1sen!2sus!4v1694382764603!5m2!1sen!2sus" 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Ark Café Location"
+      ></iframe>
+    </div>
+
+    <form id="contactForm" novalidate>
+      <h2>Send Us a Message</h2>
+      <label for="name">Name*</label>
+      <input type="text" id="name" name="name" required placeholder="Your full name" />
+
+      <label for="email">Email*</label>
+      <input type="email" id="email" name="email" required placeholder="your.email@example.com" />
+
+      <label for="message">Message*</label>
+      <textarea id="message" name="message" required placeholder="Write your message here..."></textarea>
+
+      <button type="submit" class="btn-primary">Send Message</button>
+
+      <p id="formStatus" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <button id="backToTopBtn" title="Back to top">↑</button>
+
+  <footer>
+    <p>&copy; 2025 Ark Café. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #1e3d27;
+  background: #e9f5e9;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #3a7d44;
+  color: #e9f5e9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.menu-toggle {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #e9f5e9;
+  cursor: pointer;
+  display: none;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #e9f5e9;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.nav-links li a:hover,
+.nav-links li a.active {
+  background-color: #e9f5e9;
+  color: #3a7d44;
+}
+
+/* Banner */
+.banner-section {
+  position: relative;
+  overflow: hidden;
+  max-height: 450px;
+}
+.banner-image {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  filter: brightness(0.7);
+  transition: transform 0.5s ease;
+}
+.banner-section:hover .banner-image {
+  transform: scale(1.05);
+}
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: #e9f5e9;
+  max-width: 500px;
+}
+.banner-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+.banner-text p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+.btn-primary {
+  background-color: #6cbf6c;
+  color: white;
+  padding: 0.75rem 1.8rem;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-primary:hover {
+  background-color: #4a8a43;
+}
+
+/* Sections */
+section {
+  padding: 3rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Intro */
+.intro-section h1, .
